@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0px;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+      border-right: 1px solid #bbb;
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #eb7846;
+    }
+
+    .active {
+      background-color: #e16724;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf1;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .signin-card {
+      background-color: #f1b662;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fab189;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+    }
+
+    .form-container .button-container {
+      text-align: center;
+    }
+
+    .form-container .button-container button {
+      padding: 10px 20px;
+      background-color: #fff4d4;
+      color: #e16724;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-container .button-container button:first-child {
+      margin-right: 10px;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #202123;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .footer a {
+      color: white;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="14.06.intnshp.html">Home</a></li>
+    <li><a href="singup.html">Sign Up</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="menu card.html">Menu</a></li>
+    <li style="float:right"><a href="payment_form.html">Payment</a></li>
+  </ul>
+
+  <h1>Sign In</h1>
+  <div class="form-container">
+    <form action="process.php" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="button-container">
+        <button type="submit">Sign In</button>
+        <button type="button">Forgot Password</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-google"></i></a>
+  </footer>
+</body>
+</html>
